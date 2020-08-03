@@ -20,6 +20,6 @@
   color: var(--dark-text);
   margin-right: 24px;
   &:hover {
-    color: #4541FE;
+    color: var(--dark-text--hover);
   }
 }
