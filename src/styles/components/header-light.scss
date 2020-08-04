@@ -42,23 +42,11 @@
   height: 18px;
 }
 
-.cart__counter {
-  position: absolute;
-  background: #4541FE;
-  height: 16px;
-  width: 16px;
-  top: -45%;
-  right: -30%;
-  border-radius: 100px;
-  color: var(--light-text);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .cart__text {
   margin-left: 6px;
   &:hover {
     color: var(--dark-text--hover);
   }
 }
+
+@import 'counter';
