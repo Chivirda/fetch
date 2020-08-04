@@ -9,6 +9,8 @@ const pug = require('gulp-pug')
 const imageMin = require('gulp-imagemin')
 const ghPages = require('gulp-gh-pages')
 const webpack = require('webpack-stream')
+const ttf2woff = require('gulp-ttf2woff')
+const ttf2woff2 = require('gulp-ttf2woff2')
 
 function devServer(cb) {
   const params = {
@@ -42,6 +44,18 @@ function buildStyles() {
         .pipe(dest('build/styles/'))
 }
 
+function buildFontstoWoff() {
+  return src('src/fonts/**/*.ttf')
+        .pipe(ttf2woff())
+        .pipe(dest('build/fonts/'))
+}
+
+function buildFontstoWoff2() {
+  return src('src/fonts/**/*.ttf')
+        .pipe(ttf2woff2())
+        .pipe(dest('build/fonts/'))
+}
+
 function buildScripts() {
   return src('src/scripts/*.js')
         .pipe(webpack({
@@ -73,6 +87,8 @@ function watchFiles() {
   watch('src/scripts/*.js', buildScripts)
   watch('src/images/**/*.*', minImages)
   watch('src/vendor/**/*.*', copyVendor)
+  watch('src/fonts/**/*.ttf', buildFontstoWoff)
+  watch('src/fonts/**/*.ttf', buildFontstoWoff2)
 }
 
 function deploy() {
@@ -85,7 +101,7 @@ exports.default = series(
   parallel(
     devServer,
     series(
-      parallel(buildPages, buildStyles, buildScripts, minImages, copyVendor),
+      parallel(buildPages, buildStyles, buildScripts, minImages, copyVendor, buildFontstoWoff, buildFontstoWoff2),
       watchFiles
     )
   )
