@@ -1,5 +1,12 @@
 @import 'colors';
 
+.header-light {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+}
+
 .header-light__menu {
   list-style: none;
   display: flex;
@@ -19,6 +26,17 @@
 .menu-item {
   color: var(--dark-text);
   margin-right: 24px;
+  &:hover {
+    color: var(--dark-text--hover);
+  }
+}
+
+.cart-dark {
+  color: var(--dark-text);
+}
+
+.cart__text {
+  margin-left: 6px;
   &:hover {
     color: var(--dark-text--hover);
   }
