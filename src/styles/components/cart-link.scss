@@ -14,3 +14,12 @@
   font-size: 13px;
   line-height: 17px;
 }
+
+.empty {
+  opacity: 0.3;
+
+  .cart__counter {
+    display: none;
+  }
+
+}

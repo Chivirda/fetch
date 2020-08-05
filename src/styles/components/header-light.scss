@@ -1,5 +1,5 @@
 @import 'colors';
-@import 'counter';
+@import 'cart-link';
 
 .header-light {
   display: flex;
@@ -13,28 +13,30 @@
   list-style: none;
   display: flex;
   align-items: center;
-}
 
-.menu-item__main {
-  color: var(--dark-text);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 31px;
-  text-decoration: none;
-  margin-right: 42px;
-}
+  .menu-item {
+    color: var(--dark-text);
+    margin-right: 24px;
+  
+    &:hover {
+      color: var(--dark-text--hover);
+    }
+  }
 
-.menu-item {
-  color: var(--dark-text);
-  margin-right: 24px;
-  &:hover {
-    color: var(--dark-text--hover);
+  .menu-item__main {
+    color: var(--dark-text);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    text-decoration: none;
+    margin-right: 42px;
   }
 }
 
 .cart-dark {
   color: var(--dark-text);
+
   .cart__text {
     margin-left: 6px;
     &:hover {
