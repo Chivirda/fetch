@@ -7,11 +7,4 @@
 @import 'components/fonts';
 @import 'components/header-light';
 @import 'components/header-dark';
-
-.container {
-  margin: 0 auto;
-  width: 1200px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+@import 'containers/container';
