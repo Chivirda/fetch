@@ -1,22 +1,29 @@
 @import 'colors';
 @import 'counter';
 
-.header-light {
+.header-dark {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: 48px;
   font-family: 'PT_Sans';
+  background: linear-gradient(267.53deg, rgba(0, 0, 0, 0) 0.07%, #0C0C0C 99.93%);
 }
 
-.header-light__menu {
+.header-dark__menu {
   list-style: none;
   display: flex;
   align-items: center;
+  .menu-item {
+    color: var(--light-text);
+    margin-right: 24px;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
 }
 
 .menu-item__main {
-  color: var(--dark-text);
+  color: var(--light-text);
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -25,25 +32,18 @@
   margin-right: 42px;
 }
 
-.menu-item {
-  color: var(--dark-text);
-  margin-right: 24px;
-  &:hover {
-    color: var(--dark-text--hover);
-  }
-}
 
-.cart-dark {
-  color: var(--dark-text);
+.cart-light {
+  color: var(--light-text);
   .cart__text {
     margin-left: 6px;
     &:hover {
-      color: var(--dark-text--hover);
+      opacity: 0.5;
     }
   }
 }
 
-.cart-dark__img {
+.cart-light__img {
   position: relative;
   display: inline-block;
   width: 18px;
