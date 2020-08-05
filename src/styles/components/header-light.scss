@@ -15,7 +15,7 @@
   align-items: center;
 
   .menu-item {
-    color: var(--dark-text);
+    color: var(--dark);
     margin-right: 24px;
   
     &:hover {
@@ -24,7 +24,7 @@
   }
 
   .menu-item__main {
-    color: var(--dark-text);
+    color: var(--dark);
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -35,7 +35,7 @@
 }
 
 .cart-dark {
-  color: var(--dark-text);
+  color: var(--dark);
 
   .cart__text {
     margin-left: 6px;

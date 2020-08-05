@@ -1,0 +1,36 @@
+@import 'colors';
+
+.footer {
+  background-color: var(--dark);
+  padding: 32px 0;
+}
+
+.footer__menu {
+  font-family: 'PT Sans';
+  font-style: normal;
+  color: var(--light-text);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  list-style: none;
+
+  .footer__menu-section-link,
+  .footer__menu-title {
+    color: var(--light-text);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    
+    ul {
+      list-style: none;
+      margin-left: 9px;
+    }
+  }
+}
+
+.footer-menu__link {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--light-text);
+}
