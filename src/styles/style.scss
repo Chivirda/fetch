@@ -5,7 +5,9 @@
 }
 
 @import 'components/fonts';
+@import 'components/common-text';
 @import 'components/header-light';
 @import 'components/header-dark';
+@import 'components/footer';
+@import 'containers/about';
 @import 'containers/container';
-@import 'components/footer.scss';

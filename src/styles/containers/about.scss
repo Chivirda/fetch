@@ -1,0 +1,37 @@
+@import '../components/colors.scss';
+
+.about {
+  margin-top: 32px;
+  margin-bottom: 64px;
+  font-family: 'PT Sans';
+  height: calc(100vh - 460px);
+    
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.about__heading {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 41px;
+  color: var(--dark);
+  align-self: start;
+}
+
+.about__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 64px;
+}
+
+.about__info {
+  padding-top: 27px;
+}
+
+.about__contacts {
+  background: var(--about-plate);
+}
+
