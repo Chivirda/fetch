@@ -1,12 +1,18 @@
 @import 'colors';
 
 .footer {
+  font-family: 'PT Sans';
   background-color: var(--dark);
   padding: 32px 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
 }
 
 .footer__menu {
-  font-family: 'PT Sans';
   font-style: normal;
   color: var(--light-text);
   display: flex;
@@ -29,8 +35,54 @@
 }
 
 .footer-menu__link {
-  font-weight: normal;
+  font-weight: 300;
   font-size: 16px;
   line-height: 21px;
   color: var(--light-text);
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.footer__menu-section-link:hover {
+  opacity: 0.5;
+}
+
+.footer-menu__phone {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--light-text);
+  text-decoration: none;
+}
+
+.footer-menu__info {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 17px;
+  opacity: 0.75;
+}
+
+.footer__info {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 17px;
+  margin-top: 56px;
+  color: var(--footer-info-text);
+}
+
+.footer__rules {
+  margin: 0 24px;
+}
+
+.footer__rules,
+.footer__dev {
+  color: var(--footer-info-text);
+
+  &:hover {
+    color: var(--light-text);
+  }
 }
