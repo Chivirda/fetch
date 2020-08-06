@@ -29,9 +29,47 @@
 
 .about__info {
   padding-top: 27px;
+  max-width: 80%;
 }
 
 .about__contacts {
+  display: flex;
+  flex-direction: column;
   background: var(--about-plate);
+  color: var(--dark);
+  padding-top: 27px;
+  padding-left: 27px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
 }
 
+.about__contacts-info {
+  font-size: 13px;
+  line-height: 17px;
+}
+
+.about__mail,
+.about__phone {
+  color: var(--dark);
+}
+
+.about__mail {
+  margin-top: 16px;
+  margin-bottom: 11px;
+}
+
+.about__phone {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.requisites {
+  margin-top: 30px;
+  margin-bottom: 32px;
+}
+
+.requisites__text {
+  display: block;
+}
