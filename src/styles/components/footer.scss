@@ -71,7 +71,7 @@
   font-size: 13px;
   line-height: 17px;
   margin-top: 56px;
-  color: var(--footer-info-text);
+  color: var(--info-text);
 }
 
 .footer__rules {
@@ -80,7 +80,7 @@
 
 .footer__rules,
 .footer__dev {
-  color: var(--footer-info-text);
+  color: var(--info-text);
 
   &:hover {
     color: var(--light-text);
