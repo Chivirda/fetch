@@ -66,16 +66,20 @@
 }
 
 .footer__info {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 24px;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
   line-height: 17px;
   margin-top: 56px;
   color: var(--info-text);
-}
 
-.footer__rules {
-  margin: 0 24px;
+  @media (max-width: 1199px) {
+    grid-template-columns: 1fr;
+    grid-gap: 12px;
+  }
 }
 
 .footer__rules,
