@@ -1,10 +1,9 @@
 include meta
 header.header-light
   .container
-    nav
+    nav.header__menu
+      a(href="/" class="menu-item__main") Фетч
       ul.header-light__menu
-        li
-          a(href="/" class="menu-item__main") Фетч
         li
           a(href="#" class="menu-item") Одежда
         li
@@ -17,8 +16,8 @@ header.header-light
           a(href="#" class="menu-item") Магазин
         li
           a(href="#" class="menu-item") Доставка и оплата
-    a(href="#" class="cart-dark empty")
-      .cart-dark__img
-        img(src="images/icons/icon-cart-black.svg", alt="Корзина" class="")
-        .cart__counter 4
-      span.cart__text Оформить заказ
+      a(href="#" class="cart-dark empty")
+        .cart-dark__img
+          img(src="images/icons/icon-cart-black.svg", alt="Корзина" class="")
+          .cart__counter 4
+        span.cart__text Оформить заказ

@@ -17,6 +17,7 @@
 
 .empty {
   opacity: 0.3;
+  pointer-events: none;
 
   .cart__counter {
     display: none;
