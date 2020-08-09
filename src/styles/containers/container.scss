@@ -5,4 +5,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 30px;
+
+  @media (max-width: 1199px) {
+    width: 90%;
+  }
 }

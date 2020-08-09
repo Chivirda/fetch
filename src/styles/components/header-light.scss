@@ -7,6 +7,10 @@
   justify-content: space-between;
   height: 48px;
   font-family: 'PT_Sans';
+  
+  @media (max-width: 1199px) {
+    overflow: scroll;
+  }
 }
 
 .header-light__menu {

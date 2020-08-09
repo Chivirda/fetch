@@ -3,7 +3,6 @@
 
 .catalog {
   position: relative;
-  height: 80vh;
   font-family: 'PT Sans', sans-serif;
 
   .container {
@@ -37,7 +36,6 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 32px;
   row-gap: 48px;
-  width: 1056px;
   align-self: start;
 }
 
