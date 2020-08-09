@@ -15,10 +15,14 @@
 .footer__menu {
   font-style: normal;
   color: var(--light-text);
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
   width: 100%;
   list-style: none;
+
+  @media (max-width: 1199px) {
+    grid-template-columns: 1fr;
+  }
 
   .footer__menu-section-link,
   .footer__menu-title {
