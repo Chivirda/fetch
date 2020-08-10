@@ -7,13 +7,13 @@
   line-height: 41px;
   list-style: none;
   margin: 32px 0;
+  margin-left: 152px;
 }
 
 .breadcrumbs__item {
   text-decoration: none;
   color: var(--dark);
   margin-right: 8px;
-  margin-left: 152px;
 
   &::after {
     content: ' ';
