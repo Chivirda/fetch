@@ -73,3 +73,39 @@
 .requisites__text {
   display: block;
 }
+
+@media (max-width: 1199px) {
+  .about {
+    margin-top: 32px;
+    margin-bottom: 0;
+      
+    .container {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  .about__heading {
+    margin-left: 5%;
+  }
+  
+  .about__wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .about__info {
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 80%;
+  }
+
+  .about__contacts {
+    padding: 5%;
+  }
+}

@@ -25,11 +25,12 @@
     margin-right: 24px;
     white-space: nowrap;
   }
+  
+  .menu-item:hover {
+    color: var(--light-text--hover);
+  }
 }
 
-.menu-item:hover {
-  color: var(--light-text--hover);
-}
 
 .logo__light {
   color: var(--light-text);

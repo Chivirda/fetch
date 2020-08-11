@@ -24,11 +24,12 @@
     margin-right: 24px;
     white-space: nowrap;
   }
+  
+  .menu-item:hover {
+    color: var(--dark-text--hover);
+  }
 }
 
-.header-light__menu .menu-item:hover {
-  color: var(--dark-text--hover);
-}
 
 .logo__dark {
   color: var(--dark);
