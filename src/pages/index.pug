@@ -3,4 +3,37 @@ include components/meta
   include components/breadcrumbs
   .checkout__wrapper
     .shopping-cart
-      
+      .items
+        .item
+          .item__img
+            img(src="images/sneakers/4.jpg", alt="Maison Margiela Fusion Low Sneakers")
+          .item__description
+            span.product-name Maison Margiela Fusion Low Sneakers
+            span.product__section Кроссовки
+            span.product__price 92 000 &#8381;
+        .item
+          .item__img
+            img(src="images/sneakers/6.jpg", alt="Maison Margiela Fusion Low Sneakers")
+          .item__description
+            span.product-name Maison Margiela Fusion Low Sneakers
+            span.product__section Кроссовки
+            span.product__price 92 000 &#8381;
+        .item
+          .item__img
+            img(src="images/sneakers/8.jpg", alt="Maison Margiela Fusion Low Sneakers")
+          .item__description
+            span.product-name Maison Margiela Fusion Low Sneakers
+            span.product__section Кроссовки
+            span.product__price 92 000 &#8381;
+      .shopping-cart__total
+        span.total__sum 276 000 &#8381;
+        span.total__info Доставка бесплатно
+
+    .form__wrapper
+      form.checkout__form
+        .form__section
+          .input__wrapper
+            label(for="email" class="input__label") Эл. почта
+            input(type="email", name="email" class="form__input" placeholder="petrov@yandex.ru")
+          span.info__text Пришлём чеки и трек-номер
+
