@@ -36,4 +36,15 @@ include components/meta
             label(for="email" class="input__label") Эл. почта
             input(type="email", name="email" class="form__input" placeholder="petrov@yandex.ru")
           span.info__text Пришлём чеки и трек-номер
+          .input__wrapper
+            label(for="tel" class="input__label") Телефон
+            input(type="tel", name="tel" class="form__input" placeholder="+7 999 275-12-37")
+          span.info__text Менеджер позвонит, чтобы подтвердить заказ
+        .form__section
+          .input__wrapper
+            label(for="city" class="input__label") Город
+            input(type="text" class="form__input" placeholder="Москва") 
+          .input__wrapper
+            label(for="address") Адрес
+            textarea(name="address", cols="30", rows="3" class="form__input" placeholder="Тимирязевская, 32, квартира 99, вход со двора")
 
