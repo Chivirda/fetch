@@ -36,6 +36,7 @@ include components/meta
             label(for="email" class="input__label") Эл. почта
             input(type="email", name="email" class="form__input" placeholder="petrov@yandex.ru")
           span.info__text Пришлём чеки и трек-номер
+        .form__section
           .input__wrapper
             label(for="tel" class="input__label") Телефон
             input(type="tel", name="tel" class="form__input" placeholder="+7 999 275-12-37")
@@ -44,7 +45,11 @@ include components/meta
           .input__wrapper
             label(for="city" class="input__label") Город
             input(type="text" class="form__input" placeholder="Москва") 
+        .form__section
           .input__wrapper
-            label(for="address") Адрес
+            label(for="address" class="input__label") Адрес
             textarea(name="address", cols="30", rows="3" class="form__input" placeholder="Тимирязевская, 32, квартира 99, вход со двора")
+        .form__section.form__footer
+          span.info__text Бесплатная доставка курьером. Оплата картой онлайн.
+          button.submit__button Оформить заказ, 276 000 &#8381;
 
