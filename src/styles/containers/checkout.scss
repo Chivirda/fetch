@@ -169,6 +169,14 @@
   line-height: 17px;
 }
 
+.checkout__phone,
+.checkout__mail,
+.checkout__rules {
+  &:hover {
+    color: var(--dark);
+  }
+}
+
 .checkout__phone {
   text-decoration: none;
 }
