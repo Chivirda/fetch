@@ -1,4 +1,8 @@
 .checkout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
   font-family: 'PT_Sans', sans-serif;
 }
 
@@ -76,7 +80,6 @@
 
 .input__wrapper {
   display: flex;
-  // align-items: center;
   justify-content: space-between;
   margin-left: 24px;
   margin-right: 96px;
@@ -146,4 +149,26 @@
   &:hover {
     cursor: pointer;
   }
+}
+
+.checkout__footer {
+  display: flex;
+  margin-left: 152px;
+  margin-bottom: 24px;
+}
+
+.checkout__copy,
+.checkout__phone,
+.checkout__mail,
+.checkout__rules {
+  margin-right: 24px;
+  color: var(--lightest);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 17px;
+}
+
+.checkout__phone {
+  text-decoration: none;
 }
